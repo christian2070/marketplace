@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background-color:rgb(231, 224, 224);
+}
+
+
+header{
+background-color:black;
+border-radius: 21px;
+padding: 1% 1% 1% 2%;
+font-family:'Golos Text', sans-serif;
+color:white;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+#logo{
+width: 152px;
+height:80%;
+}
+
+nav{
+    gap:20px;
+    display:flex;
+}
+
+.navegação{
+    text-decoration:none;
+    color:white;
+}
+
+.navegação:hover{
+    color:rgb(179, 165, 165);
+}
+
+
+
+
+
+
+main{
+
+
+}
+
+footer{
+
+
+
+}
