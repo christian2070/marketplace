@@ -4,6 +4,11 @@ body{
     background-color:rgb(231, 224, 224);
 }
 
+/*/////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+                  FOOTER
+///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////*/
 
 header{
 background-color:black;
@@ -13,7 +18,7 @@ font-family:'Golos Text', sans-serif;
 color:white;
 display:flex;
 align-items:center;
-gap:20px;
+gap:30px;
 }
 
 #logo{
@@ -22,23 +27,63 @@ height:80%;
 }
 
 nav{
-    gap:20px;
-    display:flex;
+gap:20px;
+display:flex;
+align-items:center;
+flex:1;
 }
 
 .navegação{
-    text-decoration:none;
+    text-decoration: none;
     color:white;
 }
 
 .navegação:hover{
     color:rgb(179, 165, 165);
 }
+ 
+.login{
+    background-color:white;
+    color:black;
+    padding:0.6% 1.2%;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: auto; 
+    margin-right:1%;
+}
 
 
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left:auto;
+}
 
 
+#barra-pesquisar{
+    font-size:1rem;
+    border: none;
+    padding:0.5rem 0.8rem;
+    border-radius: 10px;
+    font-family:'Golos Text', sans-serif;
+    height:19px;
+    width:220px;      
+    background-color: white;
+    color: black;
+}
 
+#barra-pesquisar:focus,::placeholder
+{
+    outline: none;
+}
+
+
+/*/////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+                  MAIN
+///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////*/
 
 main{
 
