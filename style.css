@@ -6,7 +6,7 @@ body{
 
 /*/////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
-                  FOOTER
+                  HEADER
 ///////////////////////////////////////////////////////
 //////////////////////////////////////////////////////*/
 
@@ -100,7 +100,7 @@ nav{
     }
 }
 
-@media (max-width:785px){
+/*@media (max-width:785px){
 
         header{
            flex-direction: column;
@@ -121,11 +121,61 @@ nav{
         }
 
          #barra-pesquisar{
-            width:70px;      
+            width:40px;      
             height:10px;
             font-size:0.8rem ;
         }
+}*/
+
+@media (max-width: 785px) {
+  /* empilha elementos e faz a search ocupar a linha de cima */
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px;
+  }
+#logo{
+    display:none;
 }
+  /* força a barra de pesquisa a aparecer primeiro (no topo) */
+  .search-wrapper{
+    order:-1;         
+    width: 100%;
+    justify-content: center; /* centraliza o input; use flex-end para direita */
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+  }
+
+  .navegação,.login{
+    font-size:0.8rem;
+  }
+
+  /* input maior e responsivo na linha superior */
+  #barra-pesquisar{
+    width: 100%;
+    max-width: 420px; /* ajuste conforme preferir */
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  /* garante que os botões fiquem abaixo e roláveis */
+  nav{
+    order: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 6px 8px;
+    align-items:center;
+    justify-content:center;
+    margin-left:0;
+  }
+  nav > .navegação{ flex: 0 0 auto; }
+
+ 
+}
+
 
 /*/////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
