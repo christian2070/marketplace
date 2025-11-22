@@ -76,7 +76,7 @@ nav{
     border-radius: 10px;
     font-family:'Golos Text', sans-serif;
     height:18px;
-    width:220px;      
+    width:320px;      
     background-color: white;
     color: black;
 }
@@ -86,10 +86,10 @@ nav{
     outline: none;
 }
 
-@media (max-width:851px){
+@media (max-width:956px){
 
         #barra-pesquisar{
-            width:70px;     
+            width:150px;     
         }
     
         .login{
@@ -100,14 +100,17 @@ nav{
     }
 }
 
-@media (max-width:675px){
+@media (max-width:785px){
 
         header{
            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             padding-bottom: 3%;
           
+        }
+        nav{
+            font-size:0.8rem;
         }
 
         .login{
@@ -118,8 +121,9 @@ nav{
         }
 
          #barra-pesquisar{
-            width:45px;      
-            height:19px;
+            width:70px;      
+            height:10px;
+            font-size:0.8rem ;
         }
 }
 
